@@ -38,7 +38,7 @@ function loopa(imgID, zoom){
     function getCursorPosition(e){
         var a, x = 0, y = 0;
         e = e || window.event;
-        a = img.getBoungingClientRect();
+        a = img.getBoundingClientRect();
         x = e.pageX - a.left;
         y = e.pageY - a.top;
         x = x - window.pageXOffset;
